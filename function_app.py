@@ -14,13 +14,6 @@ load_dotenv()
 
 app = func.FunctionApp()
 
-def get_kucoin_credentials():
-    return {
-        'api_key': os.getenv('KUCOIN_API_KEY'),
-        'api_secret': os.getenv('KUCOIN_API_SECRET'),
-        'api_passphrase': os.getenv('KUCOIN_API_PASSPHRASE')
-    }
-
 def process_bitcoin_checker():
     logging.info('BitcoinChecker function started at %s', datetime.now().isoformat())
     

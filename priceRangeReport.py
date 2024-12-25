@@ -4,7 +4,7 @@ from binance.client import Client as BinanceClient
 from binance.exceptions import BinanceAPIException
 from prettytable import PrettyTable
 from utils import clean_symbol, convert_to_binance_symbol
-from function_app import get_kucoin_credentials
+from configuration import get_kucoin_credentials
 
 # Define constants
 KUCOIN_SYMBOLS = {'AKT-USD', 'KCS-USD'}
